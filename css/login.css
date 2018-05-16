@@ -10,7 +10,8 @@ body{
 .container {
 	max-width: 1280px;
 	width: 40%;
-	margin-top: 5vw !important;
+    margin-top: 1vw !important;
+    margin-bottom: 1vw !important;
 }
 
 @media only screen and (min-width: 993px){
