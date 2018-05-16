@@ -1,0 +1,24 @@
+body{
+    background-color: #4dd0e1;
+}
+
+.login-padd{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin-top: 5vw !important;
+  }
+@media only screen and (min-width: 993px){
+    .container {
+        width: 35% !important;
+    }
+}
+@media only screen and (min-width: 600px){
+    .container {
+        width: 30%;
+    }
+}
