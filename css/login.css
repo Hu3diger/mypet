@@ -1,0 +1,35 @@
+body{
+	background-color: #4dd0e1;
+}
+
+.login-padd{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.container {
+	max-width: 1280px;
+	width: 40%;
+	margin-top: 5vw !important;
+}
+
+@media only screen and (min-width: 993px){
+	.container {
+			width: 35% !important;
+	}
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+	.container {
+			width: 50% !important;
+	}
+}
+@media only screen and (min-width: 100px) and (max-width: 600px){
+	.container {
+			width: 80% !important;
+	}
+}
+
+#forgot{
+    color: blue;
+    font-size: 15px;
+}
