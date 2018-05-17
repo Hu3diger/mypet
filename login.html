@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Meu Pet - Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Meu Pet - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
-  </head>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <body>
-    <div class="container container-login login-padd white">
-      <div class="row">
-        <div class="col s12 m12 l12 center-align">
-            <img src="images/logo.png" width="30%"/>
-        </div>
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
+</head>
+
+<body>
+  <div class="container container-login login-padd white">
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <img src="images/logo.png" width="30%" />
       </div>
-      <div class="row">
-            <div class="input-field col s12 m6 l8 offset-m3 offset-l2 center-align">
-                <input id="email" type="email" class="validate">
-                <label for="email">E-Mail</label>
-            </div>
-        </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m6 l8 offset-m3 offset-l2 center-align">
+        <input id="email" type="email" class="validate">
+        <label for="email">E-Mail</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m8 l8 offset-m2 offset-l2 center-align">
+        <input id="passwd" type="password" class="validate">
+        <label for="passwd">Senha</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <a href="dashboard.html">
+          <button class="btn waves-effect waves-light cyan lighten" type="submit" name="action">Logar
+            <i class="material-icons right">send</i>
+          </button>
+        </a>
         <div class="row">
-            <div class="input-field col s12 m8 l8 offset-m2 offset-l2 center-align">
-                <input id="passwd" type="password" class="validate">
-                <label for="passwd">Senha</label>
-            </div>
-        </div>
-      <div class="row">
-        <div class="col s12 m12 l12 center-align">
-            <button class="btn waves-effect waves-light cyan" type="submit" name="action">Logar
-                <i class="material-icons right">send</i>
-            </button>
-            <div class="row">
-              <div class="col s12 m12 l12 center-align">
-                <span class="flow-text"><a href="#" id="forgot">Esqueci minha senha</a></span>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m12 l12 center-align">
-          <a class="waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>logar com facebook</a> 
-        </div>
-      </div>
-      <div class="row">
           <div class="col s12 m12 l12 center-align">
-            <a class="waves-effect waves-light btn-small"><i class="material-icons left">all_inclusive</i>logar com google</a> 
+            <span class="flow-text">
+              <a href="#" id="forgot">Esqueci minha senha</a>
+            </span>
           </div>
         </div>
+      </div>
     </div>
-    <!-- JS In end of the body to optimized loading -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/plotly-latest.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <a class="waves-effect waves-light btn-small cyan darken-1">
+          <i class="material-icons left">cloud</i> &nbsp; cadastre-se já &nbsp; </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <a class="waves-effect waves-light btn-small cyan darken-1">
+          <i class="material-icons left">cloud</i>logar com facebook</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <a class="waves-effect waves-light btn-small cyan darken-1">
+          <i class="material-icons left">all_inclusive</i> &nbsp; logar com google &nbsp;</a>
+      </div>
+    </div>
+  </div>
+  <!-- JS In end of the body to optimized loading -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/plotly-latest.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
