@@ -26,6 +26,10 @@
 	}
 }
 
+.margin{
+	margin-top: 3vw !important;
+}
+
 .pacific{
 	font-family: 'Pacifico', cursive;
 }
