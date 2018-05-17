@@ -20,3 +20,12 @@
 .col > .btn {
 	width: 100% !important;
 }
+@media only screen and (min-width: 933px) {
+	#plotlyDashboardPie {
+		display: none;
+	}
+}
+
+.pacific{
+	font-family: 'Pacifico', cursive;
+}

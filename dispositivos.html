@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Meu Pet - Horários</title>
+  <title>Meu Pet - Dispositivos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="images/favicon.png" />
 
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -27,7 +26,7 @@
         <a href="#" data-target="mobile-menu" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
-        <a href="#" class="brand-logo center pacific">Meu Pet</a>
+        <a href="#" class="brand-logo center">Meu Pet</a>
 
         <ul class="left hide-on-med-and-down">
           <li>
@@ -39,7 +38,7 @@
           <li>
             <a href="produtos.html">Produtos</a>
           </li>
-          <li class="active">
+          <li>
             <a href="horarios .html">Horários</a>
           </li>
         </ul>
@@ -56,72 +55,44 @@
       <li>
         <a href="produtos.html">Produtos</a>
       </li>
-      <li class="active">
-        <a href="horarios.html">Horários</a>
+      <li>
+        <a href="horarios .html">Horários</a>
       </li>
     </ul>
   </div>
 
   <div class="row">
-    <div class="col s8 m6 l6 offset-s2 offset-m3 offset-l3">
-      <table>
+    <div class="col s6 m6 l6 offset-s3 offset-m3 offset-l3">
+      <table class="striped">
+        <h3>Meus dispositivos</h3>
         <thead>
           <tr>
-            <th>Petfeeder</th>
-            <th>Horário</th>
-            <th>Status</th>
+            <th class = "left-align">Dispositivo</th>
+            <th class = "right-align">Conexão</th>
           </tr>
         </thead>
-        <tbody id="mainTable">
+        <tbody>
           <tr>
-            <td>Pandora</td>
-            <td>12:00</td>
-            <td>
-              <div class="switch">
-                <label>
-                  <input type="checkbox">
-                  <span class="lever"></span>
-                </label>
-              </div>
-            </td>
+            <td class = "left-align">Petfeeder 1 (3276721)</td>
+            <td class = "right-align">OK</td>
           </tr>
           <tr>
-            <td>Pandora</td>
-            <td>15:00</td>
-            <td>
-              <div class="switch">
-                <label>
-                  <input type="checkbox">
-                  <span class="lever"></span>
-                </label>
-              </div>
-            </td>
+            <td class = "left-align">Petfeeder 2 (3276722)</td>
+            <td class = "right-align">OK</td>
           </tr>
           <tr>
-            <td>Pandora</td>
-            <td>18:00</td>
-            <td>
-              <div class="switch">
-                <label>
-                  <input type="checkbox">
-                  <span class="lever"></span>
-                </label>
-              </div>
-            </td>
+            <td class = "left-align">Petfeeder 3 (3276723)</td>
+            <td class = "right-align">OK</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
   <div class="row">
-    <div class="col s8 m6 l6 offset-s2 offset-m3 offset-l3">
-      <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" onclick="showModal();" href="#modal1">
+    <div class="col s6 m6 l6 offset-s3 offset-m3 offset-l3">
+      <a class="btn-floating btn-large waves-effect waves-light red right">
         <i class="material-icons">add</i>
       </a>
-      <div id="modal1" class="modal">        
-      </div>
-
-
     </div>
   </div>
   <!-- JS In end of the body to optimized loading -->
