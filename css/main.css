@@ -7,14 +7,16 @@
 	margin-right: auto !important;
 }
 
-@media only screen and (max-width: 933px) {
-	#plotlyDashboardChart {
-		display: none;
-	}
+.close-button {
+	margin-right: 0 !important;
+	float: right  !important;
+	cursor: pointer;
 }
 
-@media only screen and (min-width: 933px) {
-	#plotlyDashboardPie {
-		display: none;
-	}
+.close-button-a:hover {
+	background-color: #fff !important;
+}
+
+.col > .btn {
+	width: 100% !important;
 }

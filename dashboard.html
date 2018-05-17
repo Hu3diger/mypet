@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,29 +17,34 @@
   </head>
 
   <body>
-
     <div class="navbar-fixed">
-        <nav class="cyan darken-1">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo right"><i class="large material-icons" style="font-size: 60px;">account_circle</i></a>
-            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <a href="#" class="brand-logo center">Meu Pet</a>
+      <nav class="cyan darken-1">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo right">
+            <i class="large material-icons" style="font-size: 60px;">account_circle</i>
+          </a>
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="dashboard.html" class="brand-logo center">Meu Pet</a>
 
-            <ul class="left hide-on-med-and-down">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="dispositivos.html">Dispositivos</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="horarios.html">Horários</a></li>
-            </ul>
-          </div>
+          <ul class="left hide-on-med-and-down">
+            <li class="active"><a href="dashboard.html">Home</a></li>
+            <li><a href="dispositivos.html">Dispositivos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="horarios.html">Horários</a></li>
+          </ul>
+        </div>
+      </nav>
 
-        </nav>
-        <ul class="sidenav" id="mobile-menu">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="dispositivos.html">Dispositivos</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="horarios .html">Horários</a></li>
-        </ul>
+      <ul class="sidenav" id="mobile-menu">
+        <li><a class="close-button-a"><i class="material-icons sidenav-close close-button">close</i></a></li>
+        <li class="active"><a href="dashboard.html">Home</a></li>
+        <li><a href="dispositivos.html">Dispositivos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="horarios.html">Horários</a></li>
+      </ul>
+
     </div>
 
     <div class="container">
@@ -47,18 +53,47 @@
           <div id="plotlyDashboardChart"></div>
         </div>
       </div>
+    </div>
 
+    <div class="container">
       <div class="row">
-          <div class="l12 center-align">
-            <div id="plotlyDashboardPie"></div>
+        <div class="col s12 m6">
+          <div class="card small cyan lighten-5">
+            <div class="card-content">
+              <span class="card-title">Ração está acabando</span>
+              <p>
+                Você deve comprar mais ração, a sua está quase acabando!
+                Não deixe que seu pet fique sem suas proteínas.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="produtos.html">Loja</a>
+            </div>
           </div>
         </div>
+        <div class="col s12 m6">
+          <div class="card small cyan lighten-5">
+            <div class="card-content">
+              <span class="card-title">Configure seus horários</span>
+              <p>
+                Clique aqui e configure seus horários! Você deve configurar o horário de alimentação
+                de seus pets. O horário de refeição é muito importante para o desenvolvimendo dos seus pets.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="horarios.html">Horários</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- JS In end of the body to optimized loading -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/plotly-latest.min.js"></script>
+    <script src="js/dashboard.js"></script>
     <script src="js/main.js"></script>
   </body>
+
 </html>
