@@ -26,16 +26,16 @@ function showModalHour() {
       </div>\
     </div>\
     <div class="modal-footer">\
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="dimissModal();">Cancelar</a>\
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="dimissModal(\'modal1\');">Cancelar</a>\
       <a href="#!" class="waves-effect waves-green btn-flat" onclick="saveDevice();">Salvar</a>\
     </div>\
   ');
   $('select').formSelect();
 }
 
-function dimissModal() {
-  $('.modal').modal("close");
-  $("#modal1").html("");
+function dimissModal(Tipo) {
+  $('.'+Tipo+'').modal("close");
+  $("#"+Tipo+"").html("");
 }
 
 function saveDevice() {
@@ -63,7 +63,27 @@ function saveDevice() {
   }
 }
 
-$("#tico").click(function(e){
-  let linha = $("tr").parents();
-  console.log($("linha").find(".left-align").text());
-});
+function editThisDevice(device) {
+  let name = $("." + device + "-name").html();
+  $("#show").append('\
+    <div class="modal-content center-align">\
+      <h5>Novo horário de alimentação</h5>\
+      <div class="row">\
+        <div class="input-field col s12 m8 l8 offset-m2 offset-l2">\
+          <input id="newName" type="text" class="validate" value="'+ name +'">\
+        </div>\
+      </div>\
+    </div>\
+    <div class="modal-footer">\
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="dimissModal(\'show\');">Cancelar</a>\
+      <a href="#!" class="waves-effect waves-green btn-flat" onclick="saveName(\''+device+'\');">Salvar</a>\
+    </div>\
+  ');
+  $('select').formSelect();
+}
+
+function saveName(device) {
+  let name = $("#newName").val();
+  $("." + device + "-name").html(name);
+  dimissModal('show');
+}

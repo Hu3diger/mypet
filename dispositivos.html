@@ -74,44 +74,46 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="left-align" id="tico"> Petfeeder Pandora (3276721)</td>
+          <tr id="device0">
+            <td class="left-align device0-name"> Petfeeder Pandora (3276721)</td>
             <td class="center-align">
                 <a class="btn-floating waves-effect waves-light btn-small pulse red">
                   <i class="material-icons">close</i>
                   </a>
               </td>
             <td class="right-align">
-                <a class="waves-effect waves-light btn-small red lighten-2">
-                  <i class="material-icons left">edit</i>editar
-                </a>
-              </td>
+              <a class="waves-effect waves-light btn-small red lighten-2 modal-trigger" onclick="editThisDevice('device0');" href="#show" >
+                <i class="material-icons left">edit</i>editar
+              </a>
+            </td>
           </tr>
-          <tr>
-            <td class="left-align" id="tico">Petfeeder Chiquinha (3276722)</td>
+          <tr  id="device1">
+            <td class="left-align device1-name">Petfeeder Chiquinha (3276722)</td>
             <td class = "center-align">
-                <a class="btn-floating waves-effect waves-light btn-small green">
-                    <i class="material-icons">done</i>
-                    </a>
-              </td>
-            <td class="right-align">
-                <a class="waves-effect waves-light btn-small red lighten-2">
-                  <i class="material-icons left">edit</i>editar
-                </a>
-              </td>
-          </tr>
-          <tr>
-            <td class="left-align" id="tico">Petfeeder Toby (3276723)</td>
-            <td class="center-align">
-                <a class="btn-floating waves-effect waves-light btn-small green">
-                    <i class="material-icons">done</i>
-                    </a>
+              <a class="btn-floating waves-effect waves-light btn-small green">
+                <i class="material-icons">done</i>
+              </a>
             </td>
             <td class="right-align">
-                <a class="waves-effect waves-light btn-small red lighten-2">
-                  <i class="material-icons left">edit</i>editar
-                </a>
-              </td>
+              <a class="waves-effect waves-light btn-small red lighten-2 modal-trigger" onclick="editThisDevice('device1');" href="#show">
+                <i class="material-icons left">edit</i>editar
+              </a>
+            </td>
+          </tr>
+          <tr id="device2">
+            <td class="left-align device2-name">Petfeeder Toby (3276723)</td>
+            <td class="center-align">
+              <a class="btn-floating waves-effect waves-light btn-small green">
+                <i class="material-icons">done</i>
+              </a>
+            </td>
+            <td class="right-align">
+              <a class="waves-effect waves-light btn-small red lighten-2 modal-trigger"  onclick="editThisDevice('device2');" href="#show">
+                <i class="material-icons left">edit</i>editar
+              </a>
+              <div id="show" class="modal show">
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
