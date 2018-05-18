@@ -3,7 +3,7 @@ $().ready(function () {
   $('.modal').modal();
 });
 
-function showModal() {
+function showModalHour() {
   $("#modal1").append('\
     <div class="modal-content center-align">\
       <h5>Novo horário de alimentação</h5>\
@@ -62,3 +62,8 @@ function saveDevice() {
     ");
   }
 }
+
+$("#tico").click(function(e){
+  let linha = $("tr").parents();
+  console.log($("linha").find(".left-align").text());
+});
