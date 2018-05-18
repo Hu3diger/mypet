@@ -44,6 +44,7 @@ function saveDevice() {
 
   if(name != null && hour != "" ) {
     dimissModal();
+    M.toast({html: 'Novo horário cadastrado'});
     $("#mainTable").append("\
     <tr>\
       <td>" + name +"</td>\

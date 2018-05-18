@@ -33,3 +33,23 @@
 .pacific{
 	font-family: 'Pacifico', cursive;
 }
+
+.produtos{
+	width: 70%;
+}
+
+@media only screen and (min-width: 993px){
+	.produtos{
+		width: 95%
+	}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px){
+	.produtos{
+		width: 70%;
+	}
+}
+
+.warning{
+	color: red;
+}
