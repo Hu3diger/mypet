@@ -27,8 +27,11 @@ var charts = function() {
 
   function barChart() {
     var dataChart = [{
-      x: [80, 20, 50],
-      y: ['Água', 'Comida', 'Bateria'],
+      x: [80, 18, 53],
+      y: ['Bateria', 'Comida', 'Água'],
+      marker:{
+        color: ['rgba(0,152,5,1)', 'rgba(253,59,50,1)', 'rgba(255,101,30,1)']
+      },
       orientation: 'h',
       type: 'bar'
     }];
@@ -43,7 +46,7 @@ var charts = function() {
     Plotly.newPlot("plotlyDashboardChart", dataChart, layoutChart, options);
 
     Plotly.relayout("plotlyDashboardChart", {
-      width: 0.7 * window.innerWidth,
+      width: 0.8 * window.innerWidth,
       height: 0.4 * window.innerHeight
     });
   }
@@ -51,7 +54,7 @@ var charts = function() {
   function resizeCharts() {
     window.onresize = function() {
       Plotly.relayout("plotlyDashboardChart", {
-        width: 0.7 * window.innerWidth,
+        width: 0.8 * window.innerWidth,
         height: 0.4  * window.innerHeight
       })
     }

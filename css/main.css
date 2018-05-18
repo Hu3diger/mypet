@@ -13,17 +13,24 @@
 	cursor: pointer;
 }
 
+.modebar {
+	z-index: 0 !important;
+}
+
+.svg-container {
+	width: 100% !important;
+}
+
+.main-svg {
+	width: 85vw;
+}
+
 .close-button-a:hover {
 	background-color: #fff !important;
 }
 
 .col > .btn {
 	width: 100% !important;
-}
-@media only screen and (min-width: 933px) {
-	#plotlyDashboardPie {
-		display: none;
-	}
 }
 
 .margin{
@@ -38,6 +45,11 @@
 	width: 70%;
 }
 
+.warning{
+	color: red;
+}
+
+/* Medias */
 @media only screen and (min-width: 993px){
 	.produtos{
 		width: 95%
@@ -48,8 +60,4 @@
 	.produtos{
 		width: 70%;
 	}
-}
-
-.warning{
-	color: red;
 }

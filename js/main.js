@@ -1,6 +1,7 @@
 $().ready(function () {
   $(".sidenav").sidenav();
   $('.modal').modal();
+  $('.tooltipped').tooltip();
 });
 
 function showModalHour() {
@@ -31,6 +32,16 @@ function showModalHour() {
     </div>\
   ');
   $('select').formSelect();
+
+  $('body').keyup(function(e) {
+    if(e.keyCode  == 27) dimissModal();
+  });
+
+  $(document).mouseup(function(e) {
+    let container = $("#modal1");
+    if(!container.is(e.target) && container.has(e.target).length === 0) dimissModal();
+  })
+
 }
 
 function dimissModal() {
