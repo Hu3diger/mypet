@@ -25,6 +25,7 @@ var charts = function() {
     displaylogo: false
   }
 
+  /** Generate plot with bar */
   function barChart() {
     var dataChart = [{
       x: [80, 18, 53],
@@ -51,6 +52,7 @@ var charts = function() {
     });
   }
 
+  /** Rezise the plotly based on window size */
   function resizeCharts() {
     window.onresize = function() {
       Plotly.relayout("plotlyDashboardChart", {
