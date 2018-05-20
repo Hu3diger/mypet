@@ -7,21 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
 
   <body>
+    <!-- Nav Bar -->
     <div class="navbar-fixed">
-        <nav class="cyan darken-1">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo right"><i class="large material-icons" style="font-size: 60px;">account_circle</i></a>
-            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <a href="index.html" class="brand-logo center pacific">Meu Pet</a>
+      <nav class="cyan darken-1">
+        <div class="nav-wrapper">
+          <a href="profile.html" class="brand-logo right"><i class="large material-icons" style="font-size: 60px;">account_circle</i></a>
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="index.html" class="brand-logo center pacific">Meu Pet</a>
 
           <ul class="left hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
@@ -41,10 +40,49 @@
       </ul>
     </div>
 
+    <!-- Page Content -->
     <div class="container">
       <div class="row">
-        <div class="col s12 m6 l6">
+        <div class="col s12 m6 l6 offset-m3 offset-l3 center-align">
+          <i class="large material-icons user-img">account_circle</i>
+        </div>
 
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>Seus dados</h4></li>
+              <li class="collection-item avatar">
+                <i class="circle material-icons cyan">person</i>
+                <span>Nome: </span>
+                <p>Rasmus Lerdorf</p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="circle material-icons cyan">email</i>
+                <span>E-mail:</span>
+                 <p>rasmus@gmail.com</p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="circle material-icons cyan">devices</i>
+                <span>Dispositivos:</span>
+                 <p>3</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn-small red lighten-1">
+            <i class="material-icons">delete</i>
+            Apagar Conta
+          </a>
+          <a class="waves-effect waves-light btn-small  green lighten-1">
+            <i class="material-icons">mode_edit</i>
+            Editar conta
+          </a>
         </div>
       </div>
     </div>

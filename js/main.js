@@ -43,12 +43,12 @@ var modals = function() {
     $('select').formSelect();
 
     $('body').keyup(function(e) {
-      if(e.keyCode  == 27) modals.dimissModal("modal1");
+      if(e.keyCode  == 27) dimissModal("modal1");
     });
 
     $(document).mouseup(function(e) {
       let container = $("#modal1");
-      if(!container.is(e.target) && container.has(e.target).length === 0) modals.dimissModal("modal1");
+      if(!container.is(e.target) && container.has(e.target).length === 0) dimissModal("modal1");
     })
   }
 
@@ -57,8 +57,8 @@ var modals = function() {
     let name = $("#device").val();
     let hour = $("#hour").val();
 
-    if(modals.validateFieldsOfDevice()) {
-      modals.dimissModal(modalToBeRemove);
+    if(validateFieldsOfDevice()) {
+      dimissModal(modalToBeRemove);
       M.toast({html: 'Novo horário cadastrado'});
       $("#mainTable").append("\
       <tr>\
@@ -80,8 +80,11 @@ var modals = function() {
 
   /** Validade fields on add now hour */
   function validateFieldsOfDevice() {
-    //<i class="material-icons">error_outline</i>
+
     $(".error-div").empty();
+
+    $(".select-wrapper :input").removeClass("field-wrong");
+    $("#hour").removeClass("field-wrong");
 
     var error = "";
 
@@ -89,15 +92,18 @@ var modals = function() {
     var hour = $("#hour").val();
 
     if(name == "" || name == null) {
+      $(".select-wrapper :input").addClass("field-wrong");
       error += '<p><i class="material-icons">error_outline</i> Você deve inserir um nome válido! </p>';
     }
 
     if(hour == "") {
+      $("#hour").addClass("field-wrong");
       error += '<p><i class="material-icons">error_outline</i> Você deve inserir um horário! </p>';
     }
 
     if(error != "") {
       $(".error-div").append(error);
+      scroolModalToBottom();
       return false;
     }
 
@@ -128,7 +134,11 @@ var modals = function() {
   function saveName(device) {
     let name = $("#newName").val();
     $("." + device + "-name").html(name);
-    modals.dimissModal('show');
+    dimissModal('show');
+  }
+
+  function scroolModalToBottom() {
+    $('.modal').children().animate({ scrollTop: $('.modal').height() }, 'slow');
   }
 
   /** Remove the modal pass by param */
@@ -143,6 +153,7 @@ var modals = function() {
     saveDevice: saveDevice,
     editThisDevice: editThisDevice,
     saveName: saveName,
-    validateFieldsOfDevice: validateFieldsOfDevice
+    validateFieldsOfDevice: validateFieldsOfDevice,
+    scroolModalToBottom: scroolModalToBottom
   }
 }();

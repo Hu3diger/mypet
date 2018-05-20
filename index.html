@@ -8,16 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
 
   <body>
+    <!-- Nav Bar -->
     <div class="navbar-fixed">
         <nav class="cyan darken-1">
           <div class="nav-wrapper">
@@ -32,18 +30,19 @@
             <li><a href="horarios.html">Horários</a></li>
           </ul>
         </div>
+
+        <ul class="sidenav" id="mobile-menu">
+          <li><a class="close-button-a"><i class="material-icons sidenav-close close-button">close</i></a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="dispositivos.html">Dispositivos</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+        </ul>
+
       </nav>
-
-      <ul class="sidenav" id="mobile-menu">
-        <li><a class="close-button-a"><i class="material-icons sidenav-close close-button">close</i></a></li>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="dispositivos.html">Dispositivos</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="horarios.html">Horários</a></li>
-      </ul>
-
     </div>
 
+    <!-- Page Content -->
     <div class="container">
       <div class="row">
         <div class="l12 center-align">
@@ -92,5 +91,4 @@
     <script src="js/dashboard.js"></script>
     <script src="js/main.js"></script>
   </body>
-
 </html>

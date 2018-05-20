@@ -22,7 +22,7 @@
 }
 
 .main-svg {
-	width: 85vw;
+	width: 83vw;
 }
 
 .close-button-a:hover {
@@ -47,6 +47,14 @@
 
 .warning{
 	color: red;
+}
+
+.user-img {
+	font-size: 40vh !important;
+}
+
+.field-wrong {
+	border-bottom: 1px solid #F44336 !important;
 }
 
 /* Medias */
