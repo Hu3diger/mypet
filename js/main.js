@@ -1,7 +1,30 @@
+/**
+ * Here goes the global var
+ */
+
+var counterQrCodeLoading = 0;
+
 $().ready(function () {
+
+  let myCurrentPage = window.location.pathname;
+
+  switch(myCurrentPage) {
+
+    case "/primeiros-passos.html":
+      setInterval(utils.loadingQrCode, 1000);
+      break;
+
+    case "/dispositivos.html":
+      $('.modal').modal();
+      $('.tooltipped').tooltip();
+      break;
+
+    case "/horarios.html":
+      $('.modal').modal();
+      break;
+  }
+
   $(".sidenav").sidenav();
-  $('.modal').modal();
-  $('.tooltipped').tooltip();
 });
 
 var modals = function() {
@@ -155,5 +178,26 @@ var modals = function() {
     saveName: saveName,
     validateFieldsOfDevice: validateFieldsOfDevice,
     scroolModalToBottom: scroolModalToBottom
+  }
+}();
+
+
+var utils = function() {
+
+  function loadingQrCode() {
+    counterQrCodeLoading++;
+    var text = $(".readingQrCode").text();
+    if (counterQrCodeLoading < 4) {
+      text += ".";
+    } else {
+      text = "Lendo QR Code";
+      counterQrCodeLoading = 0;
+    }
+
+    $(".readingQrCode").text(text);
+  }
+
+  return {
+    loadingQrCode: loadingQrCode
   }
 }();
