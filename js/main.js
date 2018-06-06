@@ -8,21 +8,17 @@ $().ready(function () {
 
   let myCurrentPage = window.location.pathname;
 
-  switch(myCurrentPage) {
 
-    case "/primeiros-passos.html":
+  if (myCurrentPage.indexOf("/primeiros-passos.html") >= 0)
       setInterval(utils.loadingQrCode, 1000);
-      break;
 
-    case "/dispositivos.html":
+  if (myCurrentPage.indexOf("/dispositivos.html") >= 0) {
       $('.modal').modal();
       $('.tooltipped').tooltip();
-      break;
-
-    case "/horarios.html":
-      $('.modal').modal();
-      break;
   }
+
+  if (myCurrentPage.indexOf("/horarios.html") >= 0)
+      $('.modal').modal();
 
   $(".sidenav").sidenav();
 });
