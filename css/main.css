@@ -73,6 +73,10 @@
 .top-margin-class {
 	margin-top: 0.3rem;
 }
+.mywhite{
+	color: white;
+	text-shadow: 0 0 5px #000;
+}
 
 /* Medias */
 @media only screen and (min-width: 993px){
@@ -86,3 +90,5 @@
 		width: 70%;
 	}
 }
+
+

@@ -184,13 +184,11 @@ var utils = function() {
     counterQrCodeLoading++;
     var text = $(".readingQrCode").text();
     if (counterQrCodeLoading < 4) {
-      text += ".";
+      $(".spanTeste").append(".");
     } else {
-      text = "Lendo QR Code";
+      $(".spanTeste").empty();
       counterQrCodeLoading = 0;
     }
-
-    $(".readingQrCode").text(text);
   }
 
   return {
