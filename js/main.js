@@ -132,6 +132,9 @@ var modals = function() {
   /** Modal to edit a device */
   function editThisDevice(device) {
     let name = $("." + device + "-name").html();
+    if ($("#show").html().includes("Novo horário de alimentação")){
+      $("#show").html("");
+    }
     $("#show").append('\
       <div class="modal-content center-align">\
         <h5>Novo horário de alimentação</h5>\
